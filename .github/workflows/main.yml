@@ -1,0 +1,17 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+#   variables:
+#     myName: Bendi
+
+  build:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Get Code
+          uses: actions/checkout@v2
+
+        - name: Hello World
+          run: echo "Hello, World!"
